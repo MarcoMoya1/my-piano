@@ -85,3 +85,9 @@ body {
 .black-key:nth-child(10) {
     left: 865px;
 }
+
+footer{
+    margin: 20px;
+    padding: 20px;
+    font-variant: small-caps;
+}
