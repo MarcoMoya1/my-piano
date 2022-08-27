@@ -5,6 +5,7 @@ body {
     justify-content: center;
     height: 100vh;
     align-items: center;
+    background-color:cadetblue;
 
 }
 
@@ -84,7 +85,3 @@ body {
 .black-key:nth-child(10) {
     left: 865px;
 }
-
-
-
-
