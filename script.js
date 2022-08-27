@@ -1,10 +1,15 @@
 console.log("Howdy")
 
-function playSound() {
-    new Audio('24-piano-keys/key05.mp3').play()
-}
 
 const pianoKeys = document.querySelectorAll('.key')
-pianoKeys.forEach(pianoKey => {
-    pianoKey.addEventListener("click", playSound )
+ 
+function playSound(newUrl) {
+    new Audio(newUrl).play()
+}
+
+
+pianoKeys.forEach((pianoKey, i) => {
+    const number = i < 9 ? '0' + (i + 1) : (i + 1)
+    const newUrl = '24-piano-keys/key' + number + '.mp3'
+    pianoKey.addEventListener("click", () => playSound(newUrl))
 })
